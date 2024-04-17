@@ -151,10 +151,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2448892970913500781}
   - component: {fileID: 2394029852585052415}
+  - component: {fileID: 6794847209151807435}
+  - component: {fileID: 4377869265054127931}
   - component: {fileID: 2765252382151940626}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -200,6 +202,54 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!65 &6794847209151807435
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378731401996348324}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000001, y: 2.9985156, z: 1}
+  m_Center: {x: -0.000000059604645, y: 1.4916103, z: 0}
+--- !u!54 &4377869265054127931
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378731401996348324}
+  serializedVersion: 4
+  m_Mass: 200
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!114 &2765252382151940626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,7 +262,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1fa12ae5a03f4bdd806fbca2480d0c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 0}
+  foodPrefab:
+  - {fileID: 7070477162531232114, guid: ad782c6dc9a41474eb679b6aca2946c3, type: 3}
+  - {fileID: 6601117781870595361, guid: e8be73def270e47fa8ad952608766ab1, type: 3}
+  - {fileID: 6290866106298536872, guid: 35a7ff1d8e05b4025a05c9414cf83c60, type: 3}
 --- !u!1 &887008835131240065
 GameObject:
   m_ObjectHideFlags: 0

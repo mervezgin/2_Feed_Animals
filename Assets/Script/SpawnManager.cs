@@ -6,22 +6,16 @@ public class SpawnManager : MonoBehaviour
 {
     [SerializeField] GameObject[] animalPrefabs;
 
-    
-
     // Start is called before the first frame update
     void Start()
     {
-        
+        InvokeRepeating("SpawnRandomAnimal", 2, 1.5f);
     }
 
-    // Update is called once per frame
-    void Update()
+    void SpawnRandomAnimal()
     {
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            int animalIndex = Random.Range(0, animalPrefabs.Length);
-            int animalPosX = Random.Range(-10, 10);
-            Instantiate(animalPrefabs[animalIndex], new Vector3(animalPosX, 0, 20), animalPrefabs[animalIndex].transform.rotation);
-        }
+        int animalIndex = Random.Range(0, animalPrefabs.Length);
+        int animalPosX = Random.Range(-10, 10);
+        Instantiate(animalPrefabs[animalIndex], new Vector3(animalPosX, 0, 20), animalPrefabs[animalIndex].transform.rotation);
     }
 }

@@ -4,19 +4,13 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] GameObject projectilePrefab;
+    [SerializeField] GameObject[] foodPrefab;
 
     float horizontalInput;
-    float playerSpeed = 1.0f;
+    float playerSpeed = 0.5f;
     float leftBoundary = -20.0f;
     float rightBoundary = 20.0f;
     float xRange = 20.0f;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -35,7 +29,8 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+            int foodIndex = Random.Range(0, foodPrefab.Length);
+            Instantiate(foodPrefab[foodIndex], transform.position, foodPrefab[foodIndex].transform.rotation);
         }
     }
 }
