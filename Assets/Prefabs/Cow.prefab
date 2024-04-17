@@ -944,6 +944,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3400349797433822473}
   - component: {fileID: 8477692195379282716}
+  - component: {fileID: 3905602724693251412}
+  - component: {fileID: 6980165571235176009}
   m_Layer: 0
   m_Name: Cow
   m_TagString: Untagged
@@ -988,6 +990,31 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3905602724693251412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4483035017695003959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18924fffa0a6641fe9e29c047a756a67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  foodSpeed: 5
+--- !u!114 &6980165571235176009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4483035017695003959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 150579f1fd22c4d6380d8fbeb7002714, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4574074553629515387
 GameObject:
   m_ObjectHideFlags: 0

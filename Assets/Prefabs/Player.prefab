@@ -212,6 +212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1fa12ae5a03f4bdd806fbca2480d0c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 0}
 --- !u!1 &887008835131240065
 GameObject:
   m_ObjectHideFlags: 0
